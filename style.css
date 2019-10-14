@@ -18,6 +18,9 @@ nav a{
     color: #fff !important;
     text-transform: capitalize !important;
 }
+#first{
+    /* transform: rotate(-20deg); */
+}
 #first .input-field input:focus{
     border-bottom: 1px solid #14B45C !important;
 }
@@ -35,5 +38,63 @@ nav a{
     height: 214px;
     left: 1100px;
     top: 100px;
-    background: url(images/bacgr\ 1.png);
+    background: url(images/bacgr.png);
+}
+.arc{
+    position: absolute;
+    width: 40px;
+    height: 34px;
+    left: 930px;
+    top: 720px;
+    background: url(images/arc.png);
+
+}
+#second{
+    background: #e5e5e5;
+}
+#second .second{
+    width: 80%;
+}
+@media only screen and (min-width: 993px){
+.row .col.l3 {
+    width: 20%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+}
+#second h4{
+    text-align: center;
+    line-height: 40px;
+    color: #1C1F28;
+    padding: 50px;
+}
+#second .illustrations{
+    background: #ffffff;
+}
+#second .illustrations img{
+    margin-top: 60px;
+    margin-left: 37px;
+}
+#second .illustrations p{
+    margin-top: 10px;
+    margin-left: 37px;
+    padding-bottom: 50px;
+    font-weight: bold;
+    line-height: 28px;
+    color: #1C1F28;
+}
+.paint{
+    position: absolute;
+    width: 316px;
+    height: 257px;
+    left: 1000px;
+    top: 700px;
+    background: url(images/Fill.png);
+}
+#works h4{
+    text-align: center;
+    line-height: 40px;
+    color: #1C1F28;
+    padding: 30px;
 }
