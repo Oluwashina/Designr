@@ -17,12 +17,30 @@ nav a{
     background-color: #14B45C !important;
     color: #fff !important;
     text-transform: capitalize !important;
+    height: 40px !important;
+  
+}
+#first{
+    background: linear-gradient(180deg, #FFFFFF 24.36%, #F7F7F7 93.67%);
 }
 #first .second{
     width: 90%;
 }
+#first .input-field .browser-default{
+    background: #FFFFFF;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;   
+    box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
+}
 #first .input-field input:focus{
-    border-bottom: 1px solid #14B45C !important;
+    border-color: rgba(50, 54, 67, 0.2);
+    box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
+    outline: 0 none;
 }
 .palette{
     position: absolute;
@@ -50,8 +68,8 @@ nav a{
 
 }
 #second{
-    background: #e5e5e5;
-    margin-bottom: 40px;
+    background: #f5f7fa;
+    padding-bottom: 40px;
 }
 #second .second{
     width: 80%;
@@ -73,6 +91,9 @@ nav a{
 #second .illustrations{
     background: #ffffff;
 }
+#second .illus{
+    height: 190.33px;
+}
 #second .illustrations img{
     margin-top: 60px;
     margin-left: 37px;
@@ -81,9 +102,28 @@ nav a{
     margin-top: 10px;
     margin-left: 37px;
     padding-bottom: 50px;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 28px;
     color: #1C1F28;
+}
+#second .mobile{
+    background: #ffffff;
+}
+#second .mobile img{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+#second .mobile p{
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-bottom: 50px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #1C1F28;
+}
+#second .illust{
+    height: 171px;
 }
 .paint{
     position: absolute;
@@ -98,13 +138,16 @@ nav a{
     width: 241px;
     height: 173px;
     left: 20px;
-    top: 1410px;
+    top: 1530px;
     background: url(images/Paperhand.png);
+}
+#works{
+    background: linear-gradient(180deg, #FFFFFF 24.36%, #F7F7F7 93.67%);
+    padding-bottom: 40px;
 }
 #works .second{
     width: 80%;
 }
-
 #works h4{
     text-align: center;
     line-height: 40px;
@@ -176,4 +219,19 @@ nav a{
    color: #ffffff;
    box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
    text-transform: capitalize;
+}
+#designers{
+    background: #f5f7fa;
+}
+#designers h4{
+    text-align: center;
+    line-height: 40px;
+    color: #1C1F28;
+}
+#designers p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7A7C82;
+    font-weight: 300;
 }
