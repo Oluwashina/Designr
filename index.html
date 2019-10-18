@@ -595,14 +595,64 @@
                         <div class="thumb-pic hide-on-med-and-down"></div>
                     <!-- what users are saying -->
 
-                    <h5>What our users are saying...</h5>
+                    <h4 class="user">What our users are saying...</h4>
 
                     <div class="container">
                     <div class="owl-carousel owl-theme">
-                        <div class="caroul-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi harum obcaecati at odio,</div>
-                        <div class="caroul-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laborum voluptatum, suscipit  </div>
-                        <div class="caroul-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet perspiciatis fuga error voluptatem </div>
-                        <div class="caroul-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quia vitae! Delectus accusamus, </div>
+                        <div class="caroul-color"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi harum obcaecati at odio,</p>
+                            <div class="row">
+                                <div class="container">
+                                <div class="col s4 l4">
+                                    <img src="images/Oval3.png" class="responsive-img">
+                                </div>
+                                <div class="col s8 l8">
+                                <h5 class="center-align" style="color: #323643;">Ibukun Olubori</h5>
+                                <p style="color: #F5800B; line-height: 23px;">CEO, African  Institute of Accountants</p>
+                                </div>
+                                </div>
+                            </div>
+
+                        
+                        </div>
+                        <div class="caroul-color"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laborum voluptatum, suscipit</p> 
+                            <div class="row">
+                                    <div class="container">
+                                    <div class="col s4 l4">
+                                        <img src="images/Oval3.png" class="responsive-img">
+                                    </div>
+                                    <div class="col s8 l8">
+                                    <h5 class="center-align" style="color: #323643;">Ibukun Olubori</h5>
+                                    <p style="color: #F5800B; line-height: 23px;">CEO, African  Institute of Accountants</p>
+                                    </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="caroul-color"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet perspiciatis fuga error voluptatem</p>
+                            <div class="row">
+                                    <div class="container">
+                                    <div class="col s4 l4">
+                                        <img src="images/Oval3.png" class="responsive-img">
+                                    </div>
+                                    <div class="col s8 l8">
+                                    <h5 class="center-align" style="color: #323643;">Ibukun Olubori</h5>
+                                    <p style="color: #F5800B; line-height: 23px;">CEO, African  Institute of Accountants</p>
+                                    </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="caroul-color"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quia vitae! Delectus accusamus,</p>
+                            <div class="row">
+                                    <div class="container">
+                                    <div class="col s4 l4">
+                                        <img src="images/Oval3.png" class="responsive-img">
+                                    </div>
+                                    <div class="col s8 l8">
+                                    <h5 class="center-align" style="color: #323643;">Ibukun Olubori</h5>
+                                    <p style="color: #F5800B; line-height: 23px;">CEO, African  Institute of Accountants</p>
+                                    </div>
+                                    </div>
+                                </div>
+                        </div>
                       </div>
                       </div>
 
@@ -627,7 +677,13 @@
 <script>
     $(document).ready(function(){
     $('.sidenav').sidenav();
-    $(".owl-carousel").owlCarousel();
+    $(".owl-carousel").owlCarousel({
+        nav : true, // Show 
+        dotsSpeed : 600,
+        navSpeed : 600,
+        singleItem:true,
+        items: 1
+    });
     });   
 </script>
 

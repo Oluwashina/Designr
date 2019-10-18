@@ -243,7 +243,7 @@ nav a{
     box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
     text-transform: capitalize;
  }
- #designers h5{
+ #designers h4{
     text-align: center;
     line-height: 40px;
     margin-top: 100px;
@@ -254,10 +254,11 @@ nav a{
     position: absolute;
     width: 197px;
     height: 165px;
-    left: 930px;
-    top: 3100px;
+    left: 1000px;
+    top: 3200px;
     background: url(images/NeonLike.png);
 }
-#designers .caroul-color{
+#designers .caroul-color p{
     color: #A1A4AC;
 }
+
