@@ -18,7 +18,6 @@ nav a{
     color: #fff !important;
     text-transform: capitalize !important;
     height: 40px !important;
-  
 }
 #first{
     background: linear-gradient(180deg, #FFFFFF 24.36%, #F7F7F7 93.67%);
@@ -234,4 +233,31 @@ nav a{
     line-height: 24px;
     color: #7A7C82;
     font-weight: 300;
+}
+#designers .desktop{
+    height: 260.38px;
+}
+#designers .view-more{
+    background-color: #14B45C;
+    color: #ffffff;
+    box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
+    text-transform: capitalize;
+ }
+ #designers h5{
+    text-align: center;
+    line-height: 40px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    color:  #1C1F28;
+}
+#designers .thumb-pic{
+    position: absolute;
+    width: 197px;
+    height: 165px;
+    left: 930px;
+    top: 3100px;
+    background: url(images/NeonLike.png);
+}
+#designers .caroul-color{
+    color: #A1A4AC;
 }
