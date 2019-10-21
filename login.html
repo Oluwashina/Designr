@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Designr</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+        <header>
+                <div class="navbar-fixed">
+                <nav class="nav-wrapper">
+                    <div class="container nav">
+                        <a href="#" class="brand-logo">
+                            <img src="images/image.png" alt="logo" id="logo" width="87" height="22" >
+                        </a>
+                        <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                                <i class="material-icons">menu</i>
+                            </a>
+                        <ul class="right hide-on-med-and-down">
+                                <li><a href="index.html">Home</a>
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Register</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">I'm Looking for a Job</a></li>
+                                <li><a href="#">How it Works</a></li>
+                                <li><a href="#" class="btn post">Post a Job</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            
+                <ul class="sidenav white" id="mobile-links">
+                        <li><a href="index.html" class="waves-effect" target="_self">Home</a></li>
+                        <li><a href="#" class="waves-effect" target="_self">Login</a></li>
+                        <li><a href="#" class="waves-effect" target="_self">Register</a></li>
+                        <li><a href="#" class="waves-effect" target="_self">Our Services</a></li>
+                        <li><a href="#" class="waves-effect" target="_self">I'm Looking for a Job</a></li>
+                        <li><a href="#" class="waves-effect btn post" target="_self">Post a job</a>
+                        </li>
+                    </ul>
+            
+                    </header>
+
+        <!-- section  for login form -->
+        <div class="row hide-on-med-and-down">
+            <div class="col s12 l6 login">
+                <div class="container">
+                    <h3 style="font-size: 64px; padding-top: 30px; padding-bottom: 30px;">Welcome Back!</h3>
+                </div>
+
+                <div class="container input-field">
+                    <input id="name" placeholder="Username/Email" class="browser-default" type="text">
+                </div>
+
+                <div class="container input-field">
+                        <input id="password" placeholder="Password" class="browser-default" type="password">
+                    </div>
+
+                <div class="container">
+                    <a href="" class="btn continue waves-effect waves-light">Continue</a>
+                </div>
+
+                <div class="container" style="margin-left: 180px;">
+                    <p style="color: #000000; line-height: 15px;">Forgot password? Click here.</p>
+                </div>
+
+                <div class="container center-align">
+                    <p style="font-size: 12px; padding-top: 105px;">&copy; 2019 Copyright Designr.ng, Inc. . Terms of Service . Privacy policy</p>
+                </div>
+                
+                
+            </div>
+
+            <div class="col s12 l6 login-side">
+                <div class="pix-container">
+                    <div class="pix-1">
+                    <img src="images/Rectangle105.png" width="170" height="170">
+                    </div>
+                </div>
+
+                <div class="pix2-container">
+                        <div class="pix-2">
+                        <img src="images/shutterstock6.png" width="180" height="180">
+                        </div>
+                    </div>
+
+                <div class="pix3-container">
+                    <div class="pix-3">
+                        <img src="images/shutterstock5.png" width="170" height="170">
+                    </div>
+                </div>
+
+            </div> 
+        </div>
+
+        <!-- mobile login view -->
+        <div class="row hide-on-large-only">
+            <div class="col s12">
+                    <div class="container ">
+                            <h2 style="padding-bottom: 30px;">Welcome Back!</h2>
+                        </div>
+        
+                        <div class="container input-field-mobile">
+                            <input id="name" placeholder="Username/Email" class="browser-default" type="text">
+                        </div>
+        
+                        <div class="container input-field-mobile">
+                                <input id="password" placeholder="Password" class="browser-default" type="password">
+                            </div>
+        
+                        <div class="container">
+                            <a href="" class="btn continue-mobile waves-effect waves-light">Continue</a>
+                        </div>
+        
+                        <div class="container center-align">
+                            <p style="color: #000000; line-height: 15px;">Forgot password? Click here.</p>
+                        </div>
+        
+                        <div class="container center-align">
+                            <p style="font-size: 11px; padding-top: 150px;">&copy; 2019 Copyright Designr.ng, Inc. . Terms of Service . Privacy policy</p>
+                        </div>
+                        
+            </div>
+        </div>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+<script>
+    $(document).ready(function(){
+    $('.sidenav').sidenav();
+    });
+</script>
+
+</body>
+</html>
