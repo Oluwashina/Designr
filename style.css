@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 body{
     scroll-behavior: smooth;
     font-family: 'Work Sans';
@@ -143,7 +148,7 @@ nav a{
 }
 #works{
     background: linear-gradient(180deg, #FFFFFF 24.36%, #F7F7F7 93.67%);
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
 #works .second{
     width: 80%;
@@ -230,7 +235,7 @@ nav a{
 }
 #designers{
     background: #f5f7fa;
-    padding-top: 5px;
+    padding-top: 3px;
     padding-bottom: 90px;
 }
 .oval-left{
@@ -257,6 +262,14 @@ nav a{
     color: #1C1F28;
 }
 #designers p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7A7C82;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+#designers .caroul-color p{
     text-align: center;
     font-size: 18px;
     line-height: 24px;
@@ -309,6 +322,7 @@ nav a{
     color: #A1A4AC;
     font-size: 14px;
     line-height: 19px;
+    margin-top: 30px;
 }
 #designers .perfect-fit .lets-go{
     background: #14B45C;
@@ -326,6 +340,16 @@ nav a{
 #designers .perfect-fit .link-style{
     display: flex;
     justify-content: space-evenly;
+    margin-top: -20px;
+}
+#designers .perfect-fit .link-style-mobile{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -120px;
+}
+#designers .perfect-fit .link-style-mobile a{
+    cursor: pointer;
+    color: #DADADA;
 }
 #designers .perfect-fit .link-style a{
     cursor: pointer;
@@ -342,6 +366,7 @@ nav a{
     background: url(images/footer.png);
     background-size: cover;
     margin-top: -300px;
+    padding-bottom: 20px;
 }
 #footer .second{
     padding-top: 330px;
@@ -350,7 +375,7 @@ nav a{
     width: 80%;
 }
 #footer .mobile{
-    padding-top: 300px;
+    padding-top: 250px;
 }
 
 /* Login Page style */
@@ -465,3 +490,122 @@ nav a{
 }
 
 /* register page style */
+
+
+/* services paage style */
+#services{
+    background: #f5f7fa;
+}
+.recruit{
+    background: #14B45C !important;
+    text-transform: initial;
+}
+.perfect-fit{
+    margin-top: 70px;
+    background: #FFFFFF;
+    box-shadow: 10px 20px 60px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+    border-top: 3px solid  #14B45C;
+    position: relative;
+    z-index: 5;
+}
+.perfect-fit h6{
+    color: #1C1F28;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 45px;
+}
+.perfect-fit p{
+    color: #A1A4AC;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 30px;
+}
+.perfect-fit .lets-go{
+    background: #14B45C;
+    color: #ffffff;
+    box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
+    text-transform: initial;
+    margin-top: -100px;
+}
+.perfect-fit .link-style-service{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.perfect-fit .link-style-service a{
+    cursor: pointer;
+    color: #DADADA;
+}
+.perfect-fit .link-style-service a:hover{
+    color: #14B45C;
+    transition: ease-in 0.5s;
+}
+.fit{
+    width: 90%;
+}
+#serve-footer{
+    background: url(images/footer.png);
+    background-size: cover;
+    margin-top: -200px;
+    padding-bottom: 20px;
+}
+#serve-footer .second{
+    padding-top: 300px;
+}
+.oval-left-services{
+    position: absolute;
+    right: 95.62%;
+    top: 600px;
+    height: 600px;
+    left: -26.71%;
+    background-repeat: no-repeat;
+    background: url(images/Oval-4.png);
+}
+.oval-right-services{
+    position: absolute;
+    top: 1000px;
+    left: 95.62%;
+    width: 50px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background: url(images/oval-5.png)
+}
+.paper-hat{
+    position: absolute;
+    background: url(images/PaperHat.png);
+    width: 246px;
+    top: 230px;
+    left: 1000px;
+    height: 172px;
+}
+.perfect-fit .mobile-fit .mobile-go{
+    background: #14B45C;
+    color: #ffffff;
+    box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
+    text-transform: initial;
+}
+.perfect-fit .mobile-fit .link-style-mobile{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -120px;
+}
+.perfect-fit .mobile-fit p{
+    color: #A1A4AC;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 20px; 
+    text-align: center;
+}
+.perfect-fit .mobile-fit h6{
+    color: #1C1F28;
+    text-align: center;
+    font-size: 20px;
+}
+.perfect-fit .mobile-fit .link-style-mobile a{
+    cursor: pointer;
+    color: #DADADA;
+}
+#serve-footer .mobile{
+    padding-top: 230px;
+}
