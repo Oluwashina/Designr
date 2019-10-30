@@ -167,7 +167,7 @@ nav a{
     height: 252px;
 }
 #works .icon-box{
-    margin-left: 20px;
+    margin-left: 10px;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -183,8 +183,8 @@ nav a{
     z-index: 1;
 }
 #works .postJob p{
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: 5px;
+    margin-left: 10px;
     font-size: 16px;
     line-height: 28px;
     color: #1C1F28;
@@ -302,6 +302,7 @@ nav a{
 }
 #designers .caroul-color p{
     color: #A1A4AC;
+    font-size: 15px;
 }
 #designers .perfect-fit{
     margin-top: 100px;
@@ -626,10 +627,10 @@ nav a{
 .works-video-mobile{
     background: #E3E3E3;
     border-radius: 10px;
-    height: 200px;
-    width: 250px;
+    height: 150px;
+    width: 200px;
     margin-top: 30px;
-    margin-left: 60px;
+    margin-left: 40px;
 }
 .handy{
     position: absolute;
@@ -711,4 +712,37 @@ nav a{
 }
 #serve-footer .mobile-works{
     padding-top: 190px;
+}
+
+/* post a job section */
+.my-design{
+    background: #F9F9F9;
+    box-shadow: 0px 4px 4px rgba(166, 165, 165, 0.23);
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 240px !important;
+    height: 166px !important;
+}
+.my-design-mobile{
+    background: #F9F9F9;
+    box-shadow: 0px 4px 4px rgba(166, 165, 165, 0.23);
+    border-radius: 5px;
+    height: 150px !important;
+    
+}
+.title .browser-default{
+    background: #FFFFFF;
+    padding: 12px 10px;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #CCD1D9;
+    border-radius: 4px;
+    box-sizing: border-box;   
+    box-shadow: inset 1px 1px 3px #CCD1D9;
+}
+input:focus{
+    border-color: rgba(50, 54, 67, 0.2);
+    box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
+    outline: 0 none;
 }
