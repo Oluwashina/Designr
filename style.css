@@ -775,3 +775,12 @@ input:focus{
 #footer-profile .second{
     padding-top: 200px;
 }
+#footer-profile-mobile{
+    background: url(images/footer.png);
+    background-size: cover;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+#footer-profile-mobile .mobile{
+    padding-top: 50px;
+}
