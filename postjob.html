@@ -38,7 +38,7 @@
 
          <section>
 
-            <div class="container nav hide-on-med-and-down">        
+            <div class="container nav hide">        
                     <nav class="nav-wrapper" style="background: #14B45C !important; margin-top: 30px;">
                             <ul class="left">
                                 <li><a href="#" class="white-text">Home</a>
@@ -58,7 +58,7 @@
             </div>    
             
             <!-- mobile view -->
-            <div class="container nav hide-on-large-only">
+            <div class="container nav hide">
                 <nav class="nav-wrapper" style="background: #14B45C !important; margin-top: 30px;">
                         <ul class="left">
                                 <li><a href="#" class="white-text">Inbox<span class="new badge" style="background: #FFC01F !important;">2</span></a></li>
@@ -75,7 +75,7 @@
 
          <!-- sectiion two -->
          <section style="margin-top: 30px;">
-             <div class="container nav hide-on-med-and-down">
+             <div class="container nav hide">
                  <div class="row">
                     <div class="col s6 l3 my-design">
                         <div class="row">
@@ -147,7 +147,7 @@
              </div>
 
              <!-- mobile view -->
-             <div class="container nav hide-on-large-only">
+             <div class="container nav hide">
                     <div class="row">
                             <div class="col s12 my-design-mobile">
                                 <div class="row">
@@ -227,7 +227,7 @@
 
          <!-- section three -->
          <section>
-             <div class="container nav hide-on-med-and-down" style="background: #F9F9F9;">
+             <div class="container nav hide-on-med-and-down" style="background: #F9F9F9; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
                 <h5 class="center-align" style="padding-top: 30px; padding-bottom: 20px;">Post a New job</h5>
                 <div class="container nav">
                     <div class="row">
@@ -236,15 +236,19 @@
                 </div>
                 <div class="col l2">
                     <select class="browser-default">
-                        <option value="1">Fulltime</option>
-                        <option value="2">Partime</option>
+                        <option value="1" disabled selected>Job Type</option>
+                        <option value="2">Fulltime</option>
+                        <option value="3">Partime</option>
+                        <option value="4">Freelance</option>
                     </select>
 
                 </div>
                 <div class="col l2">
                         <select class="browser-default">
-                            <option value="1" selected>Abia</option>
-                            <option value="2">Lagos</option>
+                            <option value="1" disabled selected>Location</option>
+                            <option value="2">Remote</option>
+                            <option value="3">Lagos</option>
+                            <option value="4">Abia</option>
                         </select>
     
                     </div>
@@ -258,7 +262,7 @@
                  </div>
                  <div class="row">
                  <div class="col l12">
-                     <textarea class="materialize-textarea" placeholder="More description"></textarea>
+                     <textarea id="textarea1" class="materialize-textarea" data-length="120" placeholder="More description"></textarea>
                  </div>
                  <div class="container center-align">
                 <a href="" class="btn waves-effect waves-light" style="margin-top: 20px; margin-bottom: 30px; background: #14B45C;">Post Job</a>
@@ -270,7 +274,7 @@
              </div>
 
              <!-- mobile post a job -->
-             <div class="container nav hide-on-large-only" style="background: #F9F9F9;">
+             <div class="container nav hide-on-large-only" style="background: #F9F9F9; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
                 <h5 class="center-align" style="padding-top: 30px; padding-bottom: 20px;">Post a New job</h5>
                 <div class="row">
                         <div class="col s12 title">
@@ -280,17 +284,21 @@
                 <div class="row">
                     <div class="col s12">
                         <select class="browser-default">
-                            <option value="1">Fulltime</option>
-                            <option value="2">Partime</option>
-                        </select>
+                            <option value="1" disabled selected>Job Type</option>
+                            <option value="2">Fulltime</option>
+                            <option value="3">Partime</option>
+                            <option value="4">Freelance</option>
+                    </select>
             
                     </div>
                 </div>
                 <div class="row">
                     <div class="col s12">
                         <select class="browser-default">
-                            <option value="1" selected>Abia</option>
-                            <option value="2">Lagos</option>
+                            <option value="1" disabled selected>Location</option>
+                            <option value="2">Remote</option>
+                            <option value="3">Lagos</option>
+                            <option value="4">Abia</option>
                         </select>
             
                     </div>
@@ -319,7 +327,7 @@
 
          <!-- fourth section -->
          <section style="margin-top: 30px;">
-             <div class="container nav hide-on-med-and-down" style="background: #F9F9F9;">
+             <div class="container nav hide" style="background: #F9F9F9;">
                 <div class="row">
                     <div class="col l1"  style="margin-top: 8px;">
                         <img src="images/68.png" class="responsive-img">
@@ -347,7 +355,7 @@
              </div>
              <!-- mobile view -->
 
-             <div class="container nav hide-on-large-only" style="background: #F9F9F9;">
+             <div class="container nav hide" style="background: #F9F9F9;">
                 <div class="row">
                     <div class="col s4"  style="margin-top: 8px;">
                         <img src="images/68.png" class="responsive-img">
@@ -380,7 +388,7 @@
          </section>
 
          <!-- fifth section -->
-         <div class="container nav hide-on-med-and-down" style="background: #F9F9F9;">
+         <div class="container nav hide" style="background: #F9F9F9;">
                 <div class="row">
                     <div class="col l1"  style="margin-top: 8px;">
                         <img src="images/26.png" class="responsive-img">
@@ -407,7 +415,7 @@
 
              </div>
              <!-- mobile view -->
-             <div class="container nav hide-on-large-only" style="background: #F9F9F9;">
+             <div class="container nav hide" style="background: #F9F9F9;">
                     <div class="row">
                         <div class="col s4"  style="margin-top: 8px;">
                             <img src="images/26.png" class="responsive-img">
@@ -453,6 +461,7 @@
         $('.sidenav').sidenav();
         $('.dropdown-trigger').dropdown();
         $('select').formSelect();
+        $('#textarea1').characterCounter();
             });
     </script>
 </body>
