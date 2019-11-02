@@ -14,6 +14,9 @@ nav{
 .nav{
     width: 80% !important;
 }
+.no-shadows {
+    box-shadow: 0px 5px 30px rgba(133, 135, 143, 0.2)!important;
+}
 nav a{
     color:#272A37 !important;
     font-size: 14px !important;
@@ -31,23 +34,29 @@ nav a{
 #first .second{
     width: 90%;
 }
-#first .input-field .browser-default{
+#first .input-field input[type=text]{
     background: #FFFFFF;
-    width: 100%;
+    width: 80%;
     padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
     border: 1px solid #ccc;
     border-radius: 0px;
     box-sizing: border-box;   
+    float: left;
     box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
 }
-.search-btn{
-    background-color: #14B45C !important;
+#first .input-field button{
+    float: left;
+    width: 20%;
+    padding: 12px 20px;
+    border-left: none !important;
     color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 11px 20px;
+    background-color: #14B45C !important;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    height: 45px;
+}
+#first .input-field button:hover{
+    background-color: #1dbf73!important;
 }
 #first .input-field input:focus{
     border-color: rgba(50, 54, 67, 0.2);
@@ -64,7 +73,7 @@ nav a{
 }
 .back1{
     position: absolute;
-    left: 950px;
+    left: 1000px;
     top: 100px;
 }
 .arc{
@@ -222,7 +231,6 @@ nav a{
     background-color: #D14137;
     width: 300px;
     height: 580px;
-    margin-left: 19px;
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1)
 }
 #works .laps img{
