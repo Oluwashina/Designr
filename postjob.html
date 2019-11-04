@@ -13,10 +13,10 @@
 <body>
         <header>
                 <div class="navbar-fixed">
-                    <nav class="nav-wrapper">
+                    <nav class="nav-wrapper no-shadows">
                         <div class="container nav">
                             <a href="#" class="brand-logo">
-                            <img src="images/image.png" alt="logo" id="logo" width="87" height="22" >
+                                <img src="images/image-6.png" alt="logo"  style="margin-top: 12px;" class="">
                             </a>
                             <a href="#" class="sidenav-trigger" data-target="mobile-links">
                                 <i class="material-icons">menu</i>
@@ -242,7 +242,7 @@
                 <div class="container nav">
                     <div class="row">
                     <div class="col l4 title">
-                         <input id="name" placeholder="Job Title..." class="browser-default" type="text">
+                         <input id="name" placeholder="'Job title e.g Logo Design'" class="browser-default" type="text">
                 </div>
                 <div class="col l2">
                     <select class="browser-default">
@@ -250,6 +250,8 @@
                         <option value="2">Fulltime</option>
                         <option value="3">Partime</option>
                         <option value="4">Freelance</option>
+                        <option value="5">Contract</option>
+                        <option value="6">One-Time</option>
                     </select>
 
                 </div>
@@ -263,11 +265,14 @@
     
                     </div>
                     <div class="col l4">
-                            <select class="browser-default">
-                                <option value="1" disabled selected>Salary Range</option>
+                            <!-- <select class="browser-default">
+                                <option value="1" disabled selected>Pay Range</option>
                                 <option value="2">#100,000</option>
-                            </select>
-        
+                            </select> -->
+                            <p>Pay Range(#)</p>
+                            <p class="range-field">
+                            <input type="range" id="test5" min="0" max="50"/>
+                            </p>
                         </div>
                  </div>
                  <div class="row">

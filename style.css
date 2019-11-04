@@ -67,7 +67,7 @@ nav a{
     position: absolute;
     width: 155px;
     height: 140px;
-    left: 70px;
+    left: 40px;
     top: 100px;
     background: url(images/Palette.png);
 }
@@ -80,8 +80,8 @@ nav a{
     position: absolute;
     width: 40px;
     height: 34px;
-    left: 930px;
-    top: 680px;
+    left: 900px;
+    top: 400px;
     background: url(images/arc.png);
 
 }
@@ -124,7 +124,7 @@ nav a{
     font-weight: 500;
     /* text-align: center; */
     width: 100px;
-    line-height: 28px;
+    line-height: 20px;
     color: #1C1F28;
 }
 #second .mobile{
@@ -161,7 +161,7 @@ nav a{
     width: 241px;
     height: 173px;
     left: 20px;
-    top: 1400px;
+    top: 1100px;
     background: url(images/Paperhand.png);
 }
 #works{
@@ -447,7 +447,7 @@ nav a{
     width: 210px;
     height: 230px;
     left: 1050px;
-    top: 130px;
+    top: 100px;
     box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.25);
 }
 .pix2-container{
@@ -469,8 +469,8 @@ nav a{
     position: absolute;
     width: 210px;
     height: 230px;
-    top: 425px;
-    left: 1080px;
+    top: 420px;
+    left: 1050px;
     box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.25);
     transform: rotate(7.99deg);
 }
@@ -514,6 +514,9 @@ nav a{
 /* services paage style */
 #services{
     background: #f5f7fa;
+}
+.cont{
+    width: 80%;
 }
 .recruit{
     background: #14B45C !important;
@@ -595,7 +598,7 @@ nav a{
     background: url(images/PaperHat.png);
     width: 246px;
     top: 230px;
-    left: 1000px;
+    left: 950px;
     height: 172px;
 }
 .perfect-fit .mobile-fit .mobile-go{
@@ -655,7 +658,7 @@ nav a{
     width: 241px;
     height: 173px;
     left: 20px;
-    top: 770px;
+    top: 700px;
     background: url(images/Paperhand.png);
 }
 .pen-tool{
@@ -764,6 +767,13 @@ input:focus{
     box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
     outline: 0 none;
 }
+textarea:focus{
+    border-bottom: 1px solid #F9F9F9 !important;
+     box-shadow: 0 1px 0 0 grey !important;
+}
+/* .input-field textarea:focus + label{
+    color: #1a00d4;
+} */
 
 /* profiile section */
 .oval-left-profile{

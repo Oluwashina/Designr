@@ -23,6 +23,9 @@ nav a{
     text-transform: capitalize !important;
     height: 40px !important;
 }
+.second{
+    width: 90%;
+}
 .input-field .browser-default{
     background: #FFFFFF;
     width: 100%;
@@ -61,7 +64,7 @@ input.btn{
 }
 .login-side{
     background: #14B45C;
-    height: 794.22px;
+    height: 970.22px;
     /* height: 100vh; */
 }
 
@@ -76,10 +79,10 @@ input.btn{
     margin-top:0px;
 } */
 
-#form div{
+ #form div{
     margin:2px;
     
-}
+}  
 #form .lastrow{
     position: relative;
 }
@@ -89,6 +92,11 @@ input.btn{
     width:100%;
     height:50px;
 } */
+
+.checkbox-indigo.filled-in[type="checkbox"]:checked + span:after{
+    background: #14B45C;
+    border: 2px solid #14b45c;
+  }
 
 .pix-1{
     position: relative;
@@ -101,7 +109,7 @@ input.btn{
     width: 210px;
     height: 230px;
     left: 1050px;
-    top: 130px;
+    top: 150px;
     box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.25);
 }
 .pix2-container{
@@ -109,7 +117,7 @@ input.btn{
     position: absolute;
     width: 210px;
     height: 230px;
-    top: 350px;
+    top: 400px;
     left: 760px;
     box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.25);
     transform: rotate(-15.87deg);
@@ -123,8 +131,8 @@ input.btn{
     position: absolute;
     width: 210px;
     height: 230px;
-    top: 500px;
-    left: 1080px;
+    top: 650px;
+    left: 1050px;
     box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.25);
     transform: rotate(7.99deg);
 }
