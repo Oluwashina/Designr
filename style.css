@@ -30,7 +30,9 @@ nav a{
 }
 #first{
     background: linear-gradient(180deg, #FFFFFF 24.36%, #F7F7F7 93.67%);
-    /* padding-bottom: 40px; */
+    padding-bottom: 180px;
+    background: url(images/designer-2.png);
+    background-size: cover;
 }
 #first .second{
     width: 90%;
@@ -39,7 +41,7 @@ nav a{
     background: #FFFFFF;
     width: 80%;
     padding: 12px 20px;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 0px;
     box-sizing: border-box;   
     float: left;
@@ -96,6 +98,7 @@ nav a{
     cursor: pointer;
     display: inline-block;
     height: 25px;
+    width: 100px;
     line-height: 25px;
     font-size: 1rem;
 }
@@ -175,7 +178,7 @@ nav a{
     width: 241px;
     height: 173px;
     left: 20px;
-    top: 1150px;
+    top: 1350px;
     background: url(images/Paperhand.png);
 }
 #works{
@@ -277,6 +280,17 @@ nav a{
     left: -26.71%;
     background-repeat: no-repeat;
     background: url(images/Oval-4.png);
+}
+@media only screen and (max-width: 1300px) {
+    .oval-left{
+        position: absolute;
+        right: 95.62%;
+        top: 2500px;
+        height: 600px;
+        left: -21.71%;
+        background-repeat: no-repeat;
+        background: url(images/Oval-4.png);
+    }  
 }
 .oval-right{
     position: absolute;
@@ -415,6 +429,9 @@ nav a{
     background: #F2F3F3;
     height: 610.7px;
 }
+.second{
+    width: 90%;
+}
 .field-icon {
     position: relative;
     z-index: 2;
@@ -460,7 +477,7 @@ nav a{
     position: absolute;
     width: 210px;
     height: 230px;
-    left: 1050px;
+    left: 1030px;
     top: 100px;
     box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.25);
 }
@@ -470,7 +487,7 @@ nav a{
     width: 210px;
     height: 230px;
     top: 250px;
-    left: 760px;
+    left: 730px;
     box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.25);
     transform: rotate(-15.87deg);
 }
@@ -484,7 +501,7 @@ nav a{
     width: 210px;
     height: 230px;
     top: 420px;
-    left: 1050px;
+    left: 1030px;
     box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.25);
     transform: rotate(7.99deg);
 }
@@ -598,6 +615,17 @@ nav a{
     background-repeat: no-repeat;
     background: url(images/Oval-4.png);
 }
+@media only screen and (max-width: 1300px) {
+    .oval-left-services{
+        position: absolute;
+        right: 95.62%;
+        top: 600px;
+        height: 600px;
+        left: -21.71%;
+        background-repeat: no-repeat;
+        background: url(images/Oval-4.png);
+    }  
+}
 .oval-right-services{
     position: absolute;
     top: 1000px;
@@ -691,6 +719,17 @@ nav a{
     left: -26.71%;
     background-repeat: no-repeat;
     background: url(images/Oval-4.png);
+}
+@media only screen and (max-width: 1300px) {
+    .oval-left-works{
+        position: absolute;
+        right: 95.62%;
+        top: 750px;
+        height: 600px;
+        left: -21.71%;
+        background-repeat: no-repeat;
+        background: url(images/Oval-4.png);
+    }  
 }
 .oval-right-works{
     position: absolute;
