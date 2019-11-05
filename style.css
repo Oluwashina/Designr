@@ -30,6 +30,7 @@ nav a{
 }
 #first{
     background: linear-gradient(180deg, #FFFFFF 24.36%, #F7F7F7 93.67%);
+    /* padding-bottom: 40px; */
 }
 #first .second{
     width: 90%;
@@ -84,6 +85,19 @@ nav a{
     top: 400px;
     background: url(images/arc.png);
 
+}
+.checkbox-indigo.filled-in[type="checkbox"]:checked + span:after{
+    background: #14B45C;
+    border: 2px solid #14b45c;
+  }
+[type="checkbox"]+span:not(.lever) {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    font-size: 1rem;
 }
 #second{
     background: #f5f7fa;
@@ -161,7 +175,7 @@ nav a{
     width: 241px;
     height: 173px;
     left: 20px;
-    top: 1100px;
+    top: 1150px;
     background: url(images/Paperhand.png);
 }
 #works{
