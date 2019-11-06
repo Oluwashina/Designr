@@ -37,6 +37,9 @@ nav a{
 #first .second{
     width: 90%;
 }
+#first .home{
+    width: 83%;
+}
 #first .input-field input[type=text]{
     background: #FFFFFF;
     width: 80%;
@@ -94,13 +97,21 @@ nav a{
   }
 [type="checkbox"]+span:not(.lever) {
     position: relative;
-    padding-left: 25px;
+    padding-left: 23px;
     cursor: pointer;
     display: inline-block;
     height: 25px;
     width: 100px;
-    line-height: 25px;
+    line-height: 18px;
     font-size: 1rem;
+}
+[type="checkbox"].filled-in:not(:checked)+span:not(.lever):after {
+    height: 17px !important;
+    width: 17px !important;
+    background-color: transparent;
+    border: 2px solid #5a5a5a;
+    top: 0px;
+    z-index: 0;
 }
 #second{
     background: #f5f7fa;
@@ -247,7 +258,7 @@ nav a{
 #works .laps{
     background-color: #D14137;
     width: 300px;
-    height: 580px;
+    height: 525px;
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1)
 }
 #works .laps img{
@@ -333,7 +344,7 @@ nav a{
  #designers h4{
     text-align: center;
     line-height: 40px;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 30px;
     color:  #1C1F28;
 }
