@@ -121,13 +121,19 @@ nav a{
 #second .second{
     width: 80%;
 }
-@media only screen and (min-width: 993px){
+/* @media only screen and (min-width: 993px){
 .row .col.l3 {
     width: 20%;
     margin-left: auto;
     left: auto;
     right: auto;
 }
+} */
+.awesome-services{
+    width: 20% !important;
+    margin-left: auto;
+    left: auto;
+    right: auto;
 }
 #second h4{
     text-align: center;
@@ -332,8 +338,9 @@ nav a{
     color: #7A7C82;
     font-weight: 300;
 }
+
 #designers .desktop{
-    height: 326px;
+    /* height: 326px; */
 }
 #designers .view-more{
     background-color: #14B45C;
@@ -353,7 +360,7 @@ nav a{
     width: 197px;
     height: 165px;
     left: 1000px;
-    top: 3330px;
+    top: 3260px;
     background: url(images/NeonLike.png);
 }
 #designers .caroul-color p{
