@@ -816,6 +816,32 @@ nav a{
     width: 240px !important;
     height: 166px !important;
 }
+#job .job{
+    color: #14b45c;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2.4px;
+}
+#job .day{
+    float: left;
+    width: 45%;
+    padding: 8px 15px;
+    border-left: none !important;
+    color: black;
+    border: none ;
+    box-shadow: inset 1px 1px 3px #CCD1D9;
+    cursor: pointer;
+}
+#job .days{
+    float: left;
+    width: 55%;
+    padding: 8px 15px;
+    border-left: none !important;
+    color: black;
+    border: none ;
+    box-shadow: inset 1px 1px 3px #CCD1D9;
+    cursor: pointer;
+}
 .my-design-mobile{
     background: #F9F9F9;
     box-shadow: 0px 4px 4px rgba(166, 165, 165, 0.23);
@@ -828,19 +854,34 @@ nav a{
     padding: 12px 10px;
     width: 100%;
     display: inline-block;
-    border: 1px solid #CCD1D9;
-    border-radius: 4px;
+    border-color: rgba(50, 54, 67, 0.2);
     box-sizing: border-box;   
-    box-shadow: inset 1px 1px 3px #CCD1D9;
+    box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
+}
+.title .browser-default:focus{
+    border-color: rgba(50, 54, 67, 0.2);
+    box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
+    outline: 0 none;
 }
 input:focus{
     border-color: rgba(50, 54, 67, 0.2);
     box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
     outline: 0 none;
 }
+textarea{
+    padding: 12px 10px;
+    background-color: white;
+    height: 100px;
+}
 textarea:focus{
-    border-bottom: 1px solid #F9F9F9 !important;
-     box-shadow: 0 1px 0 0 grey !important;
+    outline: 0 none;
+    box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
+    border-color: rgba(50, 54, 67, 0.2);
+}
+.select-css{
+    background: #14b45c;
+    color: white;
+    padding-left: 15px;
 }
 /* .input-field textarea:focus + label{
     color: #1a00d4;

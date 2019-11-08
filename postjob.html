@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body style="background: #e5e5e5;">
         <header>
                 <div class="navbar-fixed">
                     <nav class="nav-wrapper no-shadows">
@@ -234,58 +234,88 @@
                     
              </div>
          </section>
-
+                    <!-- this section is not available aat the moment or rather not in use -->
          <!-- section three -->
-         <section>
-             <div class="container nav hide-on-med-and-down" style="background: #F9F9F9; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
-                <h5 class="center-align" style="padding-top: 30px; padding-bottom: 20px;">Post a New job</h5>
-                <div class="container nav">
-                    <div class="row">
-                    <div class="col l4 title">
-                         <input id="name" placeholder="'Job title e.g Logo Design'" class="browser-default" type="text">
-                </div>
-                <div class="col l2">
-                    <select class="browser-default">
-                        <option value="1" disabled selected>Job Type</option>
-                        <option value="2">Fulltime</option>
-                        <option value="3">Partime</option>
-                        <option value="4">Freelance</option>
-                        <option value="5">Contract</option>
-                        <option value="6">One-Time</option>
-                    </select>
 
-                </div>
-                <div class="col l2">
-                        <select class="browser-default">
-                            <option value="1" disabled selected>Location</option>
-                            <option value="2">Remote</option>
-                            <option value="3">Lagos</option>
-                            <option value="4">Abia</option>
-                        </select>
-    
-                    </div>
-                    <div class="col l4">
-                            <!-- <select class="browser-default">
-                                <option value="1" disabled selected>Pay Range</option>
-                                <option value="2">#100,000</option>
-                            </select> -->
-                            <p>Pay Range(#)</p>
-                            <p class="range-field">
-                            <input type="range" id="test5" min="0" max="50"/>
-                            </p>
+         <section id="job">
+             <div class="container nav hide-on-med-and-down" >
+               <div class="row">
+                   <div class="col l6" style="background: #ffffff;">
+                    <div class="container second" style="margin-left: 75px; margin-top: 40px;">
+                        <div class="row">
+                            <div class="col l3" style="width: 100px; height:1px; margin-top: 30px; background-color: #14B45C">
+
+                            </div>
+                            <div class="col l5">
+                                <h5 style="color: #14b45c; font-size: 20x; text-align: center; letter-spacing: 2.4px; font-weight: bold;">POST A JOB</h5>
+                            </div>
+                            <div class="col l3" style="width: 100px; height:1px; margin-top: 30px; background-color: #14B45C">
+
+                                </div>
                         </div>
-                 </div>
-                 <div class="row">
-                 <div class="col l12">
-                     <textarea id="textarea1" class="materialize-textarea" data-length="120" placeholder="More description"></textarea>
-                 </div>
-                 <div class="container center-align">
-                <a href="" class="btn waves-effect waves-light" style="margin-top: 20px; margin-bottom: 30px; background: #14B45C;">Post Job</a>
+                    </div>
+                    <div class="container nav">
+                        <div class="row">
+                            <div class="col l12 title">
+                                <input id="name" placeholder='Job title e.g "logo design"' class="browser-default" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container nav">
+                        <div class="row">
+                            <div class="col l6">
+                                <select>
+                                    <option value="1" disabled selected>Job Type</option>
+                                    <option value="2">Fulltime</option>
+                                    <option value="3">Partime</option>
+                                    <option value="4">Freelance</option>
+                                </select>
+                            </div>
+                            <div class="col l6">
+                                <select>
+                                    <option value="1" disabled selected>Location</option>
+                                    <option value="2">Remote</option>
+                                    <option value="3">Lagos</option>
+                                    <option value="4">Abuja</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container nav">
+                        <div class="row">
+                            <div class="col l6">
+                                    <p class="center-align">DURATION</p>
+                                    <p class="range-field">
+                                    <input type="range" id="test5" min="0" max="100" />
+                                </p>
+                                <input type="text" placeholder="1 DAY" class="day browser-default">
+                                <input type="text" placeholder="365 DAYS" class="days browser-default">
+                            </div>
+                            <div class="col l6">
+                                    <p class="center-align">PAY</p>
+                                    <p class="range-field">
+                                    <input type="range" id="test5" min="0" max="100" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container nav">
+                        <div class="row">
+                            <div class="col l12">
+                                <textarea id="textarea1" placeholder="More Description(Optional)..." class="browser-default"></textarea>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container nav center-align" style="margin-bottom: 30px;">
+                        <a href="#" class="" style="background: #14B45C; color: white; padding: 10px 30px; line-height: 14px; letter-spacing: 2.4px;">POST JOB</a>
+                    </div>
+                   </div>
+                   <div class="col l6">
+                       <img src="images/shutterstock8.png" class="responsive-img" alt="post a job">
+                   </div>
+
                 </div>
-
-            </div>
-
-             </div>
+                
              </div>
 
              <!-- mobile post a job -->
@@ -340,6 +370,7 @@
 
          </section>
 
+         <!-- this section below is not available in use -->
          <!-- fourth section -->
          <section style="margin-top: 30px;">
              <div class="container nav hide" style="background: #F9F9F9;">
@@ -476,7 +507,7 @@
         $('.sidenav').sidenav();
         $('.dropdown-trigger').dropdown();
         $('select').formSelect();
-        $('#textarea1').characterCounter();
+        $('select').formSelect();
             });
     </script>
 </body>
