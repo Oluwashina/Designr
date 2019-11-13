@@ -30,9 +30,10 @@ nav a{
 }
 #first{
     background: linear-gradient(180deg, #FFFFFF 24.36%, #F7F7F7 93.67%);
-    padding-bottom: 180px;
+    padding-bottom: 300px;
     background: url(images/designer-2.png);
-    background-size: cover;
+    background-size: auto;
+    background-position: center top;
 }
 #first .second{
     width: 90%;
@@ -97,20 +98,20 @@ nav a{
   }
 [type="checkbox"]+span:not(.lever) {
     position: relative;
-    padding-left: 23px;
+    padding-left: 20px;
     cursor: pointer;
     display: inline-block;
-    height: 25px;
+    height: 20px;
     width: 100px;
     line-height: 18px;
-    font-size: 1rem;
+    font-size: 16px;
 }
 [type="checkbox"].filled-in:not(:checked)+span:not(.lever):after {
-    height: 17px !important;
-    width: 17px !important;
+    height: 14px !important;
+    width: 14px !important;
     background-color: transparent;
-    border: 2px solid #5a5a5a;
-    top: 0px;
+    border: 1px solid #979797;
+    top: 2px;
     z-index: 0;
 }
 #second{
@@ -195,7 +196,7 @@ nav a{
     width: 241px;
     height: 173px;
     left: 20px;
-    top: 1350px;
+    top: 1470px;
     background: url(images/Paperhand.png);
 }
 #works{
@@ -817,14 +818,14 @@ nav a{
     height: 166px !important;
 }
 .first-half{
-    width: 50% !important;
+    /* width: 50% !important; */
     margin-left: 0 !important;
     left: 0 !important;
     right: 0 !important;
 }
 .second-half{
-    width: 50%;
-    margin-left: -10px !important;
+    /* width: 50%; */
+    margin-left: -12px !important;
     left: 0 !important;
     right: 0 !important;
 }
@@ -836,16 +837,16 @@ nav a{
 }
 #job .day{
     float: left;
-    width: 50%;
-    padding: 8px 15px;
+    width: 45%;
+    padding: 8px 10px;
     color: #9FA3A7;
     border: 1px solid #CDCFD4 ;
     cursor: pointer;
 }
 #job .days{
     float: left;
-    width: 50%;
-    padding: 8px 15px;
+    width: 55%;
+    padding: 8px 10px;
     color: #9FA3A7;
     border: 1px solid #CDCFD4;
     cursor: pointer;
@@ -853,7 +854,7 @@ nav a{
 #job .naira{
     float: left;
     width: 45%;
-    padding: 8px 12px;
+    padding: 8px 10px;
     color: #9FA3A7;
     border: 1px solid #CDCFD4 ;
     cursor: pointer;
@@ -861,7 +862,7 @@ nav a{
 #job .nairas{
     float: left;
     width: 55%;
-    padding: 8px 12px;
+    padding: 8px 10px;
     color: #9FA3A7;
     border: 1px solid #CDCFD4;
     cursor: pointer;
@@ -896,6 +897,9 @@ textarea{
     padding: 12px 10px;
     background-color: white;
     height: 100px;
+    border: none;
+    box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
+    border-color: rgba(50, 54, 67, 0.2);
 }
 textarea:focus{
     outline: 0 none;
@@ -908,7 +912,26 @@ textarea:focus{
     padding-left: 15px;
     letter-spacing: 2.4px;
     line-height: 14px;
+    appearance: none; 
+    -webkit-appearance: none;
+    background-image: url(images/Shapes.png);
+    background-repeat: no-repeat;
+    background-position: 155px;
 }
+.custom-select-wrapper {
+    position: relative
+   }
+.custom-select-wrapper:after {
+    border-left: 2px solid white;
+    content:"\00a0";
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    opacity: 0.5;
+    z-index: 2;
+    display:block;
+    height: 25px;
+  }
 .select-css option{
     background: white;
     color: #14b45c;
@@ -920,6 +943,22 @@ input[type=range]+.thumb {
 }
 input[type=range]::-webkit-slider-thumb{
     background-color: #FEB062;
+}
+.noUi-connect{
+    background: #FEB062 !important;
+}
+.noUi-horizontal .noUi-handle, .noUi-vertical .noUi-handle{
+    background: #FEB062;
+}
+.noUi-target .noUi-horizontal .noUi-tooltip{
+    background-color: #FEB062;
+}
+.theme-green .back-bar .pointer {
+    background-image: linear-gradient(to bottom, #feb062, #feb062)!important;
+    border: none!important;
+}
+.theme-green .back-bar .selected-bar {
+    background-image: linear-gradient(to bottom, #feb062, #feb062)!important;
 }
 /* .input-field textarea:focus + label{
     color: #1a00d4;

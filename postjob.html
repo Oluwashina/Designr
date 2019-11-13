@@ -7,9 +7,10 @@
     <title>Designr</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet">
-    <link href="//cdn.bootcss.com/noUiSlider/8.5.1/nouislider.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="nouislider.min.css">
+    <link rel="stylesheet" href="jquery.range.css">
 </head>
 <body style="background: #e5e5e5;">
         <header>
@@ -241,14 +242,14 @@
          <section id="job">
              <div class="container nav hide-on-med-and-down" >
                <div class="row">
-                   <div class="col l6 first-half" style="background: #ffffff;">
+                   <div class="col l6 first-half" style="background: #ffffff; z-index: 1000;">
                     <div class="container second" style="margin-left: 75px; margin-top: 40px;">
                         <div class="row">
                             <div class="col l3" style="width: 100px; height:1px; margin-top: 30px; background-color: #14B45C">
 
                             </div>
                             <div class="col l5">
-                                <h5 style="color: #14b45c; font-size: 20x; text-align: center; letter-spacing: 2.4px; font-weight: bold;">POST A JOB</h5>
+                                <h5 style="color: #14b45c; font-size: 20px; text-align: center; letter-spacing: 2.4px; font-weight: bold;">POST A JOB</h5>
                             </div>
                             <div class="col l3" style="width: 100px; height:1px; margin-top: 30px; background-color: #14B45C">
 
@@ -265,14 +266,17 @@
                     <div class="container nav">
                         <div class="row" style="margin-top: 30px;">
                             <div class="col l6">
+                                <div class="custom-select-wrapper">
                                 <select class="browser-default select-css">
                                     <option value="1" disabled selected>JOB TYPE</option>
                                     <option value="2">Fulltime</option>
                                     <option value="3">Partime</option>
                                     <option value="4">Freelance</option>
                                 </select>
+                                </div>
                             </div>
                             <div class="col l6">
+                                    <div class="custom-select-wrapper">
                                 <select class="browser-default select-css">
                                         <option disabled selected>LOCATION</option>
                                         <option value="Abia">Abia</option>
@@ -313,6 +317,7 @@
                                         <option value="Yobe">Yobe</option>
                                         <option value="Zamfara">Zamfara</option>
                                 </select>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -320,19 +325,15 @@
                         <div class="row" style="margin-top: 30px;">
                             <div class="col l6">
                                     <p class="center-align" style="color: #9FA3A7; letter-spacing: 2.4px; font-weight: bold; line-height: 17px; font-size: 14px;">DURATION</p>
-                                    <p class="range-field">
-                                    <input type="range" id="test5" min="1" max="365" />
-                                </p>
-                                <input type="text" placeholder="1 DAY" class="day browser-default">
-                                <input type="text" placeholder="365 DAYS" class="days browser-default">
+                                   <div id="test-slider" style="margin-top: 10px; margin-bottom: 10px;"></div>
+                                <input type="text" placeholder="1 DAY"  id="slider-range-value" class="day browser-default">
+                                <input type="text" placeholder="365 DAYS" id="slider-range-value1" class="days browser-default">
                             </div>
                             <div class="col l6">
-                                    <p class="center-align" style="color: #9FA3A7; letter-spacing: 2.4px; font-weight: bold; line-height: 17px; font-size: 14px;">PAY</p>
-                                    <p class="range-field">
-                                    <input type="range" id="test5" min="0" max="1000000" />
-                                </p>
-                                <input type="text" placeholder="N 0" class="naira browser-default">
-                                <input type="text" placeholder="N 1,000,000" class="nairas browser-default">
+                                    <p class="center-align" style="color: #9FA3A7; letter-spacing: 2.4px; font-weight: bold; margin-bottom: 13px; line-height: 17px; font-size: 14px;">PAY</p>
+                                    <input type="hidden" class="slider-input" value="23"  />
+                                <input type="text" placeholder="N 0" class="naira browser-default" style="margin-top: 20px;">
+                                <input type="text" placeholder="N 1,000,000" class="nairas browser-default" style="margin-top: 20px;">
                             </div>
                         </div>
                     </div>
@@ -349,7 +350,7 @@
                     </div>
                    </div>
                    <div class="col l6 second-half">
-                       <img src="images/shutterstock8.png" class="responsive-img" alt="post a job" style="">
+                       <img src="images/shutterstock8.png"  alt="post a job" width="645" height="566.22">
                    </div>
 
                 </div>
@@ -539,32 +540,60 @@
 
 <script src="https://kit.fontawesome.com/d54c227c34.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="//cdn.bootcss.com/noUiSlider/8.5.1/nouislider.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="nouislider.min.js"></script>
+<script src="jquery.range.js"></script>
+<script src="wNumb.js"></script>
     <script>
         $(document).ready(function(){
         $('.sidenav').sidenav();
         $('.dropdown-trigger').dropdown();
-        $('select').formSelect();
-        $('select').formSelect();
+        $('select').formSelect(); 
+       var range = $('.slider-input').jRange({
+            from: 1,
+            to: 365,
+            step: 1,
+            width: 200,
+            isRange : true
             });
-
-            var slider = document.getElementById('test-slider');
-  noUiSlider.create(slider, {
-   start: [20, 80],
-   connect: true,
-   step: 1,
-   orientation: 'horizontal', // 'horizontal' or 'vertical'
-   range: {
-     'min': 0,
-     'max': 100
-   },
-   format: wNumb({
-     decimals: 0
-   })
-  });
+        range.jRange('setValue', '60,250');
         
-            
+ var slider = document.getElementById('test-slider');
+  noUiSlider.create(slider, {
+    start: [90, 200],
+    connect: true,
+    step: 1,
+    range: {
+        'min': 1,
+        'max': 365
+    },
+    format: wNumb({
+        decimals: 3,
+        thousand: '.',
+        suffix: 'Days',
+    })
+  }); 
+
+  var rangeSliderValueElement = document.getElementById('slider-range-value');
+  var rangeSliderValueElement1 = document.getElementById('slider-range-value1');
+
+slider.noUiSlider.on('update', function (values, handle) {
+    var value = values[handle];
+    if (handle) {
+        rangeSliderValueElement1.value = value;
+    } else {
+		rangeSliderValueElement.value = value;
+	}
+});
+rangeSliderValueElement1.addEventListener('change', function () {
+    slider.noUiSlider.set([null, this.value]);
+});
+rangeSliderValueElement.addEventListener('change', function () {
+    slider.noUiSlider.set(this.value);
+});
+
+});
+    
     </script>
 </body>
 </html>
