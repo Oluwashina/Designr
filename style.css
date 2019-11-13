@@ -911,12 +911,12 @@ textarea:focus{
     color: white;
     padding-left: 15px;
     letter-spacing: 2.4px;
-    line-height: 14px;
+    line-height: 24px;
     appearance: none; 
     -webkit-appearance: none;
-    background-image: url(images/Shapes.png);
+    background-image: url(images/chevron-down.png);
     background-repeat: no-repeat;
-    background-position: 155px;
+    background-position: 150px;
 }
 .custom-select-wrapper {
     position: relative
@@ -926,7 +926,7 @@ textarea:focus{
     content:"\00a0";
     position: absolute;
     top: 10px;
-    right: 50px;
+    right: 60px;
     opacity: 0.5;
     z-index: 2;
     display:block;
@@ -934,7 +934,7 @@ textarea:focus{
   }
 .select-css option{
     background: white;
-    color: #14b45c;
+    color: gray;
     line-height: 14px;
     letter-spacing: 2.4px;
 }
