@@ -837,32 +837,32 @@ nav a{
 }
 #job .day{
     float: left;
-    width: 45%;
-    padding: 8px 10px;
+    width: 50%;
+    padding: 8px 9px;
     color: #9FA3A7;
     border: 1px solid #CDCFD4 ;
     cursor: pointer;
 }
 #job .days{
     float: left;
-    width: 55%;
-    padding: 8px 10px;
+    width: 50%;
+    padding: 8px 9px;
     color: #9FA3A7;
     border: 1px solid #CDCFD4;
     cursor: pointer;
 }
 #job .naira{
     float: left;
-    width: 45%;
-    padding: 8px 10px;
+    width: 47%;
+    padding: 8px 9px;
     color: #9FA3A7;
     border: 1px solid #CDCFD4 ;
     cursor: pointer;
 }
 #job .nairas{
     float: left;
-    width: 55%;
-    padding: 8px 10px;
+    width: 53%;
+    padding: 8px 9px;
     color: #9FA3A7;
     border: 1px solid #CDCFD4;
     cursor: pointer;
@@ -952,6 +952,43 @@ input[type=range]::-webkit-slider-thumb{
 }
 .noUi-target .noUi-horizontal .noUi-tooltip{
     background-color: #FEB062;
+}
+.noUi-horizontal{
+    height: 3px !important;
+    border: none !important;
+}
+.noUi-target{
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    background: #e5e5e5 !important;
+}
+.noUi-horizontal .noUi-handle {
+    width: 15px !important;
+    height: 15px !important;
+    left: 5px !important;
+    border-radius: 50% !important;
+    top: -6px;
+    border: none !important;
+    transition: width .2s cubic-bezier(0.215, 0.610, 0.355, 1.000), height .2s cubic-bezier(0.215, 0.610, 0.355, 1.000), left .2s cubic-bezier(0.215, 0.610, 0.355, 1.000), top .2s cubic-bezier(0.215, 0.610, 0.355, 1.000) !important;
+}
+.noUi-state-drag *{
+    border: none !important;
+    outline: none !important;
+}
+.noUi-handle{
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+}
+.noUi-handle:after, .noUi-handle:before {
+    content: "";
+    display: none !important;
+    position: absolute;
+    height: 14px;
+    width: 1px;
+    background: #feb062 !important;
+    left: 14px;
+    top: 6px;
 }
 .theme-green .back-bar .pointer {
     background-image: linear-gradient(to bottom, #feb062, #feb062)!important;

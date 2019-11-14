@@ -324,16 +324,16 @@
                     <div class="container nav">
                         <div class="row" style="margin-top: 30px;">
                             <div class="col l6">
-                                    <p class="center-align" style="color: #9FA3A7; letter-spacing: 2.4px; font-weight: bold; line-height: 17px; font-size: 14px;">DURATION</p>
-                                   <div id="test-slider" style="margin-top: 10px; margin-bottom: 10px;"></div>
+                                    <p class="center-align" style="color: #9FA3A7; letter-spacing: 2.4px; font-weight: bold; line-height: 17px; font-size: 15px;">DURATION</p>
+                                   <div id="duration-slider" style="margin-top: 10px; margin-bottom: 15px;"></div>
                                 <input type="text" placeholder="1 DAY"  id="slider-range-value" class="day browser-default">
                                 <input type="text" placeholder="365 DAYS" id="slider-range-value1" class="days browser-default">
                             </div>
                             <div class="col l6">
-                                    <p class="center-align" style="color: #9FA3A7; letter-spacing: 2.4px; font-weight: bold; margin-bottom: 13px; line-height: 17px; font-size: 14px;">PAY</p>
-                                    <input type="hidden" class="slider-input" value="23"  />
-                                <input type="text" placeholder="N 0" class="naira browser-default" style="margin-top: 20px;">
-                                <input type="text" placeholder="N 1,000,000" class="nairas browser-default" style="margin-top: 20px;">
+                                    <p class="center-align" style="color: #9FA3A7; letter-spacing: 2.4px; font-weight: bold; line-height: 17px; font-size: 15px;">PAY</p>
+                                    <div id="pay-slider" style="margin-top: 10px; margin-bottom: 15px;"></div>
+                                <input type="text" placeholder="N 0" class="naira browser-default" id="pay-range-value">
+                                <input type="text" placeholder="N 1,000,000" class="nairas browser-default" id="pay-range-value1">
                             </div>
                         </div>
                     </div>
@@ -350,7 +350,7 @@
                     </div>
                    </div>
                    <div class="col l6 second-half">
-                       <img src="images/shutterstock8.png"  alt="post a job" width="645" height="566.22">
+                       <img src="images/shutterstock8.png"  alt="post a job" width="645" height="556.22">
                    </div>
 
                 </div>
@@ -548,17 +548,9 @@
         $(document).ready(function(){
         $('.sidenav').sidenav();
         $('.dropdown-trigger').dropdown();
-        $('select').formSelect(); 
-       var range = $('.slider-input').jRange({
-            from: 1,
-            to: 365,
-            step: 1,
-            width: 200,
-            isRange : true
-            });
-        range.jRange('setValue', '60,250');
-        
- var slider = document.getElementById('test-slider');
+        $('select').formSelect();
+        // duration slider
+ var slider = document.getElementById('duration-slider');
   noUiSlider.create(slider, {
     start: [90, 200],
     connect: true,
@@ -570,7 +562,7 @@
     format: wNumb({
         decimals: 3,
         thousand: '.',
-        suffix: 'Days',
+        suffix: ' Days',
     })
   }); 
 
@@ -590,6 +582,38 @@ rangeSliderValueElement1.addEventListener('change', function () {
 });
 rangeSliderValueElement.addEventListener('change', function () {
     slider.noUiSlider.set(this.value);
+});
+// pay slider
+var sliderPay = document.getElementById('pay-slider');
+  noUiSlider.create(sliderPay, {
+    start: [5000, 200000],
+    connect: true,
+    step: 1000,
+    range: {
+        'min': 0,
+        'max': 1000000
+    },
+    format: wNumb({
+        decimals: 0,
+        thousand: ',',
+        prefix: 'N ',
+    })
+  }); 
+  var rangepay = document.getElementById('pay-range-value');
+  var rangepay1 = document.getElementById('pay-range-value1');
+  sliderPay.noUiSlider.on('update', function (values, handle) {
+    var value = values[handle];
+    if (handle) {
+        rangepay1.value = value;
+    } else {
+		rangepay.value = value;
+	}
+});
+rangepay1.addEventListener('change', function () {
+    sliderPay.noUiSlider.set([null, this.value]);
+});
+rangepay.addEventListener('change', function () {
+    sliderPay.noUiSlider.set(this.value);
 });
 
 });
