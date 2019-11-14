@@ -94,7 +94,7 @@ nav a{
 }
 .checkbox-indigo.filled-in[type="checkbox"]:checked + span:after{
     background: #14B45C;
-    border: 2px solid #14b45c;
+    border: 1px solid #14b45c;
   }
 [type="checkbox"]+span:not(.lever) {
     position: relative;
@@ -105,6 +105,17 @@ nav a{
     width: 100px;
     line-height: 18px;
     font-size: 16px;
+}
+[type="checkbox"].filled-in:checked+span:not(.lever):after {
+    height: 14px !important;
+    width: 14px !important;
+    top: 2px !important;
+}
+[type="checkbox"].filled-in:checked+span:not(.lever):before {
+    top: 2px;
+    left: 1px;
+    width: 6px;
+    height: 8px;
 }
 [type="checkbox"].filled-in:not(:checked)+span:not(.lever):after {
     height: 14px !important;
@@ -361,7 +372,7 @@ nav a{
     width: 197px;
     height: 165px;
     left: 1000px;
-    top: 3260px;
+    top: 3320px;
     background: url(images/NeonLike.png);
 }
 #designers .caroul-color p{
@@ -841,6 +852,8 @@ nav a{
     padding: 8px 9px;
     color: #9FA3A7;
     border: 1px solid #CDCFD4 ;
+    font-size: 13px;
+    line-height: 12px;
     cursor: pointer;
 }
 #job .days{
@@ -849,6 +862,8 @@ nav a{
     padding: 8px 9px;
     color: #9FA3A7;
     border: 1px solid #CDCFD4;
+    font-size: 13px;
+    line-height: 12px;
     cursor: pointer;
 }
 #job .naira{
@@ -857,6 +872,8 @@ nav a{
     padding: 8px 9px;
     color: #9FA3A7;
     border: 1px solid #CDCFD4 ;
+    font-size: 13px;
+    line-height: 12px;
     cursor: pointer;
 }
 #job .nairas{
@@ -865,6 +882,8 @@ nav a{
     padding: 8px 9px;
     color: #9FA3A7;
     border: 1px solid #CDCFD4;
+    font-size: 13px;
+    line-height: 12px;
     cursor: pointer;
 }
 .my-design-mobile{
@@ -894,7 +913,7 @@ input:focus{
     outline: 0 none;
 }
 textarea{
-    padding: 12px 10px;
+    padding: 10px 10px;
     background-color: white;
     height: 100px;
     border: none;
@@ -909,9 +928,10 @@ textarea:focus{
 .select-css{
     background: #14b45c;
     color: white;
-    padding-left: 15px;
+    padding-left: 18px;
     letter-spacing: 2.4px;
-    line-height: 24px;
+    line-height: 14px;
+    font-size: 14px;
     appearance: none; 
     -webkit-appearance: none;
     background-image: url(images/chevron-down.png);
