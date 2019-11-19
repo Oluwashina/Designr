@@ -92,6 +92,9 @@ nav a{
     background: url(images/arc.png);
 
 }
+.home{
+    width: 83%;
+}
 .checkbox-indigo.filled-in[type="checkbox"]:checked + span:after{
     background: #14B45C;
     border: 1px solid #14b45c;
@@ -148,10 +151,10 @@ nav a{
     right: auto;
 }
 #second h4{
-    text-align: center;
     line-height: 40px;
     color: #1C1F28;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 #second .illustrations{
     background: #ffffff;
@@ -218,10 +221,9 @@ nav a{
     width: 80%;
 }
 #works h4{
-    text-align: center;
     line-height: 40px;
     color: #1C1F28;
-    padding: 30px;
+    padding: 50px;
 }
 #works .postJob{
     background: #ffffff;
@@ -301,6 +303,9 @@ nav a{
     padding-top: 3px;
     padding-bottom: 90px;
 }
+#designers .second{
+    width: 80%;
+}
 .oval-left{
     position: absolute;
     right: 95.62%;
@@ -331,16 +336,17 @@ nav a{
     background: url(images/oval-5.png)
 }
 #designers h4{
-    text-align: center;
+    text-align: left;
     line-height: 40px;
     color: #1C1F28;
 }
 #designers p{
-    text-align: center;
+    text-align: left;
     font-size: 18px;
     line-height: 24px;
     color: #7A7C82;
     font-weight: 300;
+    margin-top: -20px;
     margin-bottom: 50px;
 }
 #designers .caroul-color p{
@@ -354,6 +360,9 @@ nav a{
 #designers .desktop{
     /* height: 326px; */
 }
+#designers .inspired{
+    height: 310px;
+}
 #designers .view-more{
     background-color: #14B45C;
     color: #ffffff;
@@ -361,7 +370,7 @@ nav a{
     text-transform: capitalize;
  }
  #designers h4{
-    text-align: center;
+    text-align: left;
     line-height: 40px;
     margin-top: 50px;
     margin-bottom: 30px;
@@ -372,7 +381,7 @@ nav a{
     width: 197px;
     height: 165px;
     left: 1000px;
-    top: 3320px;
+    top: 3400px;
     background: url(images/NeonLike.png);
 }
 #designers .caroul-color p{
@@ -899,25 +908,26 @@ nav a{
     width: 100%;
     display: inline-block;
     border-color: rgba(50, 54, 67, 0.2);
+    border: none;
     box-sizing: border-box;   
-    box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
+    box-shadow: 0px 5px 30px rgba(133, 135, 143, 0.2);
 }
 .title .browser-default:focus{
     border-color: rgba(50, 54, 67, 0.2);
-    box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
+    box-shadow: 0px 5px 30px rgba(133, 135, 143, 0.2);
     outline: 0 none;
 }
 input:focus{
     border-color: rgba(50, 54, 67, 0.2);
-    box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
+    box-shadow: 0px 5px 30px rgba(133, 135, 143, 0.2);
     outline: 0 none;
 }
-textarea{
+#textarea1{
     padding: 10px 10px;
     background-color: white;
     height: 100px;
     border: none;
-    box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
+    box-shadow: 0px 5px 30px rgba(133, 135, 143, 0.2);
     border-color: rgba(50, 54, 67, 0.2);
 }
 textarea:focus{
@@ -931,7 +941,7 @@ textarea:focus{
     padding-left: 18px;
     letter-spacing: 2.4px;
     line-height: 14px;
-    font-size: 14px;
+    font-size: 13px;
     appearance: none; 
     -webkit-appearance: none;
     background-image: url(images/chevron-down.png);
@@ -942,15 +952,15 @@ textarea:focus{
     position: relative
    }
 .custom-select-wrapper:after {
-    border-left: 2px solid white;
+    border-left: 1px solid white;
     content:"\00a0";
     position: absolute;
-    top: 10px;
-    right: 60px;
+    top: 13px;
+    right: 55px;
     opacity: 0.5;
     z-index: 2;
     display:block;
-    height: 25px;
+    height: 20px;
   }
 .select-css option{
     background: white;
@@ -990,6 +1000,9 @@ input[type=range]::-webkit-slider-thumb{
     top: -6px;
     border: none !important;
     transition: width .2s cubic-bezier(0.215, 0.610, 0.355, 1.000), height .2s cubic-bezier(0.215, 0.610, 0.355, 1.000), left .2s cubic-bezier(0.215, 0.610, 0.355, 1.000), top .2s cubic-bezier(0.215, 0.610, 0.355, 1.000) !important;
+}
+.noUi-horizontal .noUi-handle-lower {
+        margin-left: 12px !important;
 }
 .noUi-state-drag *{
     border: none !important;
@@ -1058,3 +1071,36 @@ input[type=range]::-webkit-slider-thumb{
 #footer-profile-mobile .mobile{
     padding-top: 50px;
 }
+
+/* faq section */
+.collapsible-header {
+    justify-content: space-between;
+    background: linear-gradient(180deg, #0F8846 0%, rgba(71, 204, 130, 0.9) 100%) !important;
+    box-shadow: 1px 1px 30px rgba(15, 136, 70, 0.5);
+    color: white;
+    padding: 20px;
+    padding-left: 30px;
+    /* border-radius: 10px !important; */
+  }
+.collapsible-header i {
+    position: relative;
+    right: 0px;
+}
+.collapsible{
+    background: #0D1117;
+}
+.collapsible li{
+    margin: 20px !important;
+    width: 800px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    /* border-radius: 10px !important; */
+}
+.collapsible li.active{
+    color: black !important;
+    background: white !important;
+}
+.Faq{
+    width: 88%;
+}
+
