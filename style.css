@@ -927,6 +927,7 @@ input:focus{
     background-color: white;
     height: 100px;
     border: none;
+    resize: none;
     box-shadow: 0px 5px 30px rgba(133, 135, 143, 0.2);
     border-color: rgba(50, 54, 67, 0.2);
 }
