@@ -271,14 +271,16 @@
                                     <option value="1" disabled selected>JOB TYPE</option>
                                     <option value="2">Fulltime</option>
                                     <option value="3">Partime</option>
-                                    <option value="4">Freelance</option>
+                                    <option value="4">Onetime</option>
+                                    <option value="5">Freelance</option>
+                                    <option value="6">Others</option>
                                 </select>
                                 </div>
                             </div>
                             <div class="col l6">
                                     <div class="custom-select-wrapper">
                                 <select class="browser-default select-css">
-                                        <option disabled selected>LOCATION</option>
+                                        <option value="anywhere">ANYWHERE</option>
                                         <option value="Abia">Abia</option>
                                         <option value="Adamawa">Adamawa</option>
                                         <option value="Akwa Ibom">Akwa Ibom</option>
@@ -358,52 +360,122 @@
              </div>
 
              <!-- mobile post a job -->
-             <div class="container nav hide-on-large-only" style="background: #F9F9F9; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
-                <h5 class="center-align" style="padding-top: 30px; padding-bottom: 20px;">Post a New job</h5>
+             <div class="container hide-on-large-only">
                 <div class="row">
-                        <div class="col s12 title">
-                             <input id="name" placeholder="Job Title..." class="browser-default" type="text">
+                    <div class="col s12" style="background: #ffffff; z-index: 1000;">
+                     <div class="container" style=" margin-top: 30px;">
+                         <div class="row">
+                                <div class="col s2 l2" style="width: 80px; height:1px; margin-top: 25px; background-color: #14B45C">
+                        </div>
+                        <div class="col s6 l8">
+                         <h5 style="color: #14b45c; font-size: 20px; line-height: 18px; text-align: center; letter-spacing: 1.2px; font-weight: bold;">POST A JOB</h5>
+                        </div>
+                        <div class="col s2 l2" style="width: 80px;  height:1px; margin-top: 25px; background-color: #14B45C">
+                        </div>
+                        </div>
+                    </div>
+                    <!-- input -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s12 title">
+                                <input placeholder='Job title e.g "logo design"' class="browser-default" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- job type -->
+                    <div class="container">
+                            <div class="row" style="margin-top: 30px;">
+                                <div class="col s6">
+                                    <div class="custom-select-wrapper-mobile">
+                                    <select class="browser-default select-css-mobile">
+                                        <option value="1" disabled selected>JOB TYPE</option>
+                                        <option value="2">Fulltime</option>
+                                        <option value="3">Partime</option>
+                                        <option value="4">Onetime</option>
+                                        <option value="5">Freelance</option>
+                                        <option value="6">Others</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div class="col s6">
+                                        <div class="custom-select-wrapper-mobile">
+                                    <select class="browser-default select-css-mobile">
+                                            <option value="anywhere">ANYWHERE</option>
+                                            <option value="Abia">Abia</option>
+                                            <option value="Adamawa">Adamawa</option>
+                                            <option value="Akwa Ibom">Akwa Ibom</option>
+                                            <option value="Anambra">Anambra</option>
+                                            <option value="Bauchi">Bauchi</option>
+                                            <option value="Bayelsa">Bayelsa</option>
+                                            <option value="Benue">Benue</option>
+                                            <option value="Borno">Borno</option>
+                                            <option value="Cross Rive">Cross River</option>
+                                            <option value="Delta">Delta</option>
+                                            <option value="Ebonyi">Ebonyi</option>
+                                            <option value="Edo">Edo</option>
+                                            <option value="Ekiti">Ekiti</option>
+                                            <option value="Enugu">Enugu</option>
+                                            <option value="FCT">F.C.T</option>
+                                            <option value="Gombe">Gombe</option>
+                                            <option value="Imo">Imo</option>
+                                            <option value="Jigawa">Jigawa</option>
+                                            <option value="Kaduna">Kaduna</option>
+                                            <option value="Kano">Kano</option>
+                                            <option value="Katsina">Katsina</option>
+                                            <option value="Kebbi">Kebbi</option>
+                                            <option value="Kogi">Kogi</option>
+                                            <option value="Kwara">Kwara</option>
+                                            <option value="Lagos">Lagos</option>
+                                            <option value="Nasarawa">Nasarawa</option>
+                                            <option value="Niger">Niger</option>
+                                            <option value="Ogun">Ogun</option>
+                                            <option value="Ondo">Ondo</option>
+                                            <option value="Osun">Osun</option>
+                                            <option value="Oyo">Oyo</option>
+                                            <option value="Plateau">Plateau</option>
+                                            <option value="Rivers">Rivers</option>
+                                            <option value="Sokoto">Sokoto</option>
+                                            <option value="Taraba">Taraba</option>
+                                            <option value="Yobe">Yobe</option>
+                                            <option value="Zamfara">Zamfara</option>
+                                    </select>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- slider mobile -->
+                    <div class="container">
+                            <div class="row" style="margin-top: 30px;">
+                                <div class="col s6">
+                                        <p class="center-align" style="color: #9FA3A7; letter-spacing: 2.4px; line-height: 17px; font-size: 15px;">DURATION</p>
+                                       <div id="duration-slider-mobile" style="margin-top: 10px; margin-bottom: 15px;"></div>
+                                    <input type="text" placeholder="1 DAY"  id="slider-range-value-mobile" class="day browser-default">
+                                    <input type="text" placeholder="365 DAYS" id="slider-range-value1-mobile" class="days browser-default">
+                                </div>
+                                <div class="col s6">
+                                        <p class="center-align" style="color: #9FA3A7; letter-spacing: 2.4px; line-height: 17px; font-size: 15px;">PAY</p>
+                                        <div id="pay-slider-mobile" style="margin-top: 10px; margin-bottom: 15px;"></div>
+                                    <input type="text" placeholder="N 0" class="naira browser-default" id="pay-range-value-mobile">
+                                    <input type="text" placeholder="N 1,000,000" class="nairas browser-default" id="pay-range-value1-mobile">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- description -->
+                         <div class="container">
+                        <div class="row" style="margin-top: 30px;">
+                            <div class="col s12">
+                                <textarea id="textarea1" placeholder="More description(Optional)..." class="browser-default"></textarea>  
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <!-- post -->
+                    <div class="container center-align" style="margin-bottom: 40px; margin-top: 30px;">
+                            <a href="#" class="" style="background: #14B45C; color: white; padding: 10px 30px; line-height: 14px; letter-spacing: 2.4px;">POST JOB</a>
                         </div>
                 </div>
-                <div class="row">
-                    <div class="col s12">
-                        <select class="browser-default">
-                            <option value="1" disabled selected>Job Type</option>
-                            <option value="2">Fulltime</option>
-                            <option value="3">Partime</option>
-                            <option value="4">Freelance</option>
-                    </select>
-            
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <select class="browser-default">
-                            <option value="1" disabled selected>Location</option>
-                            <option value="2">Remote</option>
-                            <option value="3">Lagos</option>
-                            <option value="4">Abia</option>
-                        </select>
-            
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <select class="browser-default">
-                            <option value="1" disabled selected>Salary Range</option>
-                            <option value="2">#100,000</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row">
-                     <div class="col s12">
-                        <textarea class="materialize-textarea" placeholder="More description"></textarea>
-                    </div>
-                </div>
 
-                <div class="container center-align">
-                    <a href="" class="btn waves-effect waves-light" style="margin-bottom: 40px; background: #14B45C;">Post Job</a>
-                </div>
+             </div>
 
              </div>
 
@@ -615,6 +687,39 @@ rangepay1.addEventListener('change', function () {
 rangepay.addEventListener('change', function () {
     sliderPay.noUiSlider.set(this.value);
 });
+//duration slider mobile
+var sliderMobile = document.getElementById('duration-slider-mobile');
+  noUiSlider.create(sliderMobile, {
+    start: [90, 200],
+    connect: true,
+    step: 1,
+    range: {
+        'min': 1,
+        'max': 365
+    },
+    format: wNumb({
+        decimals: 3,
+        thousand: '.',
+        suffix: 'Day',
+    })
+  }); 
+
+  //pay slider mobile
+  var sliderPayMobile = document.getElementById('pay-slider-mobile');
+  noUiSlider.create(sliderPayMobile, {
+    start: [5000, 200000],
+    connect: true,
+    step: 1000,
+    range: {
+        'min': 0,
+        'max': 1000000
+    },
+    format: wNumb({
+        decimals: 0,
+        thousand: ',',
+        prefix: 'N',
+    })
+  }); 
 
 });
     

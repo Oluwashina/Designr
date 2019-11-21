@@ -30,7 +30,7 @@ nav a{
 }
 #first{
     background: linear-gradient(180deg, #FFFFFF 24.36%, #F7F7F7 93.67%);
-    padding-bottom: 300px;
+    padding-bottom: 100px;
     background: url(images/designer-2.png);
     background-size: auto;
     background-position: center top;
@@ -210,7 +210,7 @@ nav a{
     width: 241px;
     height: 173px;
     left: 20px;
-    top: 1470px;
+    top: 1250px;
     background: url(images/Paperhand.png);
 }
 #works{
@@ -361,7 +361,7 @@ nav a{
     /* height: 326px; */
 }
 #designers .inspired{
-    height: 310px;
+    height: 300px;
 }
 #designers .view-more{
     background-color: #14B45C;
@@ -381,7 +381,7 @@ nav a{
     width: 197px;
     height: 165px;
     left: 1000px;
-    top: 3400px;
+    top: 3300px;
     background: url(images/NeonLike.png);
 }
 #designers .caroul-color p{
@@ -739,7 +739,7 @@ nav a{
     width: 241px;
     height: 173px;
     left: 20px;
-    top: 700px;
+    top: 650px;
     background: url(images/Paperhand.png);
 }
 .pen-tool{
@@ -780,7 +780,7 @@ nav a{
     background: url(images/oval-5.png)
 }
 .perfect-fit-works{
-    margin-top: 200px;
+    margin-top: 100px;
     background: #FFFFFF;
     box-shadow: 10px 20px 60px rgba(0, 0, 0, 0.06);
     border-radius: 15px;
@@ -848,6 +848,7 @@ nav a{
     margin-left: -12px !important;
     left: 0 !important;
     right: 0 !important;
+    height: 558.22px;
 }
 #job .job{
     color: #14b45c;
@@ -949,6 +950,22 @@ textarea:focus{
     background-repeat: no-repeat;
     background-position: 150px;
 }
+.select-css-mobile{
+    background: #14b45c;
+    color: white;
+    padding-left: 15px;
+    letter-spacing: 1.2px;
+    line-height: 14px;
+    font-size: 13px;
+    appearance: none; 
+    -webkit-appearance: none;
+    background-image: url(images/chevron-down.png);
+    background-repeat: no-repeat;
+    background-position: 110px;
+}
+.custom-select-wrapper-mobile {
+    position: relative
+   }
 .custom-select-wrapper {
     position: relative
    }
@@ -958,6 +975,17 @@ textarea:focus{
     position: absolute;
     top: 13px;
     right: 55px;
+    opacity: 0.5;
+    z-index: 2;
+    display:block;
+    height: 20px;
+  }
+  .custom-select-wrapper-mobile:after {
+    border-left: 1px solid white;
+    content:"\00a0";
+    position: absolute;
+    top: 11px;
+    right: 37px;
     opacity: 0.5;
     z-index: 2;
     display:block;
@@ -1080,7 +1108,7 @@ input[type=range]::-webkit-slider-thumb{
     box-shadow: 1px 1px 30px rgba(15, 136, 70, 0.5);
     color: white;
     padding: 20px;
-    padding-left: 30px;
+    /* padding-left: 30px; */
     /* border-radius: 10px !important; */
   }
 .collapsible-header i {
@@ -1092,6 +1120,13 @@ input[type=range]::-webkit-slider-thumb{
 }
 .collapsible li{
     margin: 20px !important;
+    /* width: 800px !important; */
+    /* margin-left: auto !important; */
+    /* margin-right: auto !important; */
+    /* border-radius: 10px !important; */
+}
+.collapsible li.mobile{
+    margin: 20px !important;
     width: 800px !important;
     margin-left: auto !important;
     margin-right: auto !important;
@@ -1102,6 +1137,6 @@ input[type=range]::-webkit-slider-thumb{
     background: white !important;
 }
 .Faq{
-    width: 88%;
+    width: 78%;
 }
 
