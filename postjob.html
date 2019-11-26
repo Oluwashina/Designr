@@ -24,7 +24,7 @@
                                 <i class="material-icons">menu</i>
                             </a>
                             <ul class="right hide-on-med-and-down">
-                                    <li><a href="index.html">Home</a>
+                                    <li><a href="hire.html">Home</a>
                                     <li><a href="login.html">Login</a></li>
                                     <li><a href="register.html">Register</a></li>
                                     <li><a href="services.html">Our Services</a></li>
@@ -37,7 +37,7 @@
                 </div>
                     
                     <ul class="sidenav white" id="mobile-links">
-                            <li><a href="index.html" class="waves-effect" target="_self">Home</a></li>
+                            <li><a href="hire.html" class="waves-effect" target="_self">Home</a></li>
                             <li><a href="login.html" class="waves-effect" target="_self">Login</a></li>
                             <li><a href="register.html" class="waves-effect" target="_self">Register</a></li>
                             <li><a href="services.html" class="waves-effect" target="_self">Our Services</a></li>
@@ -703,7 +703,22 @@ var sliderMobile = document.getElementById('duration-slider-mobile');
         suffix: 'Day',
     })
   }); 
-
+  var MobileRangeSlider = document.getElementById('slider-range-value-mobile');
+  var MobileRangeSlider1 = document.getElementById('slider-range-value1-mobile');
+  sliderMobile.noUiSlider.on('update', function (values, handle) {
+    var value = values[handle];
+    if (handle) {
+        MobileRangeSlider1.value = value;
+    } else {
+		MobileRangeSlider.value = value;
+	}
+});
+MobileRangeSlider1.addEventListener('change', function () {
+    sliderMobile.noUiSlider.set([null, this.value]);
+});
+MobileRangeSlider.addEventListener('change', function () {
+    sliderMobile.noUiSlider.set(this.value);
+});
   //pay slider mobile
   var sliderPayMobile = document.getElementById('pay-slider-mobile');
   noUiSlider.create(sliderPayMobile, {
@@ -720,6 +735,22 @@ var sliderMobile = document.getElementById('duration-slider-mobile');
         prefix: 'N',
     })
   }); 
+  var PayRangeSlider = document.getElementById('pay-range-value-mobile');
+  var PayRangeSlider1 = document.getElementById('pay-range-value1-mobile');
+  sliderPayMobile.noUiSlider.on('update', function (values, handle) {
+    var value = values[handle];
+    if (handle) {
+        PayRangeSlider1.value = value;
+    } else {
+		PayRangeSlider.value = value;
+	}
+});
+PayRangeSlider1.addEventListener('change', function () {
+    sliderPayMobile.noUiSlider.set([null, this.value]);
+});
+PayRangeSlider.addEventListener('change', function () {
+    sliderPayMobile.noUiSlider.set(this.value);
+});
 
 });
     
