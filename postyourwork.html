@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Designr</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" href="nouislider.min.css">
+    <link rel="stylesheet" href="jquery.range.css">
+</head>
+<body style="background: #e5e5e5;">
+    <header>
+            <div class="navbar-fixed">
+             <nav class="nav-wrapper no-shadows">
+                    <div class="container nav">
+                        <a href="#" class="brand-logo">
+                            <img src="images/designr_blue.png" alt="logo" width="129" height="30" style="margin-top: 15px;" >
+                        </a>
+                        <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                                <i class="material-icons">menu</i>
+                            </a>
+                        <ul class="right hide-on-med-and-down">
+                                <li><a href="work.html">Home</a>
+                                <li><a href="workLogin.html">Login</a></li>
+                                <li><a href="workRegister.html">Register</a></li>
+                                <li><a href="workServices.html">Our Services</a></li>
+                                <li><a href="hire.html">I want to hire</a></li>
+                                <li><a href="howitworks.html">How it Works</a></li>
+                                <li><a href="#" class="btn post">Post your work</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            
+                <ul class="sidenav white" id="mobile-links">
+                        <li><a href="work.html" class="waves-effect" target="_self">Home</a></li>
+                        <li><a href="workLogin.html" class="waves-effect" target="_self">Login</a></li>
+                        <li><a href="workRegister.html" class="waves-effect" target="_self">Register</a></li>
+                        <li><a href="workServices.html" class="waves-effect" target="_self">Our Services</a></li>
+                        <li><a href="hire.html" class="waves-effect" target="_self">I want to hire</a></li>
+                        <li><a href="howitworks.html" class="waves-effect" target="_self">How it Works</a></li>
+                        <li><a href="#" class="waves-effect btn post" target="_self">Post your work</a>
+                        </li>
+                    </ul>
+            
+         </header>
+
+
+        <!-- post your work section -->
+        <section id="job">
+                <div class="container nav hide-on-med-and-down"  style=" margin-top: 30px;">
+                    <div class="row">
+                        <div class="col l6 first-half" style="background: #ffffff;">
+                                <div class="container nav" style=" margin-top: 30px;">
+                                        <div class="row">
+                                            <div style="margin-left: 11px;">
+                                                <div class="col l2" style="width: 100px; height:1px; margin-top: 30px; background-color: #213661;">
+                                            </div>
+                                            </div>
+                                            <div class="col l6">
+                                                <h5 style="color: #213661; font-size: 18px; line-height: 28px; text-align: center; letter-spacing: 2.4px; font-weight: bold;">POST YOUR WORK</h5>
+                                            </div>
+                                            <div class="col l2" style="width: 100px; height:1px; margin-top: 30px; background-color: #213661;">
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- SECOND -->
+
+
+
+                        </div>
+
+                        <div class="col l6 second-half">
+                                <img src="images/postyourworkpix.png"  alt="post a job" width="630" height="558.22">
+                            </div>
+                    </div>
+
+                 </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://kit.fontawesome.com/d54c227c34.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+<script>
+    $(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('select').formSelect();
+    $(".owl-carousel").owlCarousel({
+        // nav : true, // Show 
+        dotsSpeed : 600,
+        navSpeed : 600,
+        singleItem:true,
+        items: 1
+    });
+    $('.collapsible').collapsible();
+    $( ".collapsible-header" ).click(function() {
+      $(".more",this).toggle()
+      $(".less", this).toggle()
+    var elem = document.querySelector('.collapsible.expandable');
+     var instance = M.Collapsible.init(elem, {
+     accordion: false
+    });   
+  });
+    });     
+</script>
+</body>
+</html>

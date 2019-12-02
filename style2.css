@@ -64,6 +64,31 @@ nav a{
     box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
     outline: 0 none;
 }
+#first-mobile .input-field-search input[type=text]{
+    background: #FFFFFF;
+    width: 75%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 0px;
+    box-sizing: border-box;   
+    float: left;
+    box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
+}
+#first-mobile .input-field-search button{
+    float: left;
+    width: 25%;
+    padding: 12px 20px;
+    border-left: none !important;
+    color: white;
+    background-color: #213661 !important;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+#first-mobile .input-field-search input:focus{
+    border-color: rgba(50, 54, 67, 0.2);
+    box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
+    outline: 0 none;
+}
 #first .input-field input[type=text]{
     background: #FFFFFF;
     width: 75%;
@@ -920,4 +945,18 @@ nav a{
 }
 #serve-footer .mobile-works{
     padding-top: 190px;
+}
+/* post your work section */
+.first-half{
+    /* width: 50% !important; */
+    margin-left: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+}
+.second-half{
+    /* width: 50%; */
+    margin-left: -12px !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 558.22px;
 }
