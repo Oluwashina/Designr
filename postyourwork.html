@@ -57,12 +57,12 @@
                         <div class="col l6 first-half" style="background: #ffffff;">
                                 <div class="container nav" style=" margin-top: 30px;">
                                         <div class="row">
-                                            <div style="margin-left: 11px;">
+                                            <div>
                                                 <div class="col l2" style="width: 100px; height:1px; margin-top: 30px; background-color: #213661;">
                                             </div>
                                             </div>
                                             <div class="col l6">
-                                                <h5 style="color: #213661; font-size: 18px; line-height: 28px; text-align: center; letter-spacing: 2.4px; font-weight: bold;">POST YOUR WORK</h5>
+                                                <h5 style="color: #213661; font-size: 17px; line-height: 28px; text-align: center; letter-spacing: 2.4px; font-weight: bold;">POST YOUR WORK</h5>
                                             </div>
                                             <div class="col l2" style="width: 100px; height:1px; margin-top: 30px; background-color: #213661;">
                                                 </div>
@@ -70,13 +70,81 @@
                                     </div>
 
                                     <!-- SECOND -->
+                                    <div class="container nav">
+                                            <div class="category-select" style="margin: auto; width: 50%;">
+                                                <select class="browser-default category-css">
+                                                    <option value="1" disabled selected>CATEGORY</option>
+                                                    <option value="2">Fulltime</option>
+                                                    <option value="3">Partime</option>
+                                                    <option value="4">Onetime</option>
+                                                    <option value="5">Freelance</option>
+                                                    <option value="6">Others</option>
+                                                </select>
+                                    </div>
+                                </div>
+
+                                <!-- third -->
+                                <div class="container nav" style="margin-top: 50px;">
+                                    <div class="row">
+                                        <div class="col l4">
+                                    <div class="image-upload">
+                                        <label for="file-upload">
+                                            <i class="material-icons">camera_alt</i>
+                                        </label>
+                                        <input accept=".png, .jpg, .jpeg" type="file" id="file-upload" />
+                                        <div id="file-upload-filename"></div>
+                                        <!-- <img id="blah" src="#" alt="your image" /> -->
+                                    </div>
+                                    </div>
+                                    <!-- 2nd pix -->
+                                    <div class="col l4">
+                                            <div class="image-upload center">
+                                                <label for="file-upload1">
+                                                    <i class="material-icons">camera_alt</i>
+                                                </label>
+                                                <input id="file-upload1" accept=".png, .jpg, .jpeg" type="file"/>
+                                                <div id="file-upload-filename1"></div>
+                                            </div>
+                                        </div>
+                                        <!-- third pix -->
+                                        <div class="col l4">
+                                            <div class="image-upload right">
+                                                    <label for="file-input">
+                                                        <i class="material-icons">camera_alt</i>
+                                                    </label>
+                                                    <input id="file-input"  accept=".png, .jpg, .jpeg" type="file"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- fourth -->
+                                <div class="container nav" style="margin-top: 30px;">
+                                        <div class="yes center">
+                                                <span class="btn_upload">
+                                                  <input type="file" id="imag" title="" class="input-img"/>
+                                                  Add File
+                                                  </span>
+                                        </div>
+                                </div>
+
+                                <!-- fiftth -->
+                                <div class="container nav" style="margin-top: 30px;">
+                                     <div class="chips chips-placeholder chips-initial"></div>
+                                 </div>
+
+                                   <!-- post -->
+                    <div class="container nav center-align" style="margin-bottom: 50px; margin-top: 50px;">
+                            <a href="#" class="" style="background:  #213661; color: white; padding: 10px 30px;">POST YOUR WORK</a>
+                        </div>
+                                
 
 
 
                         </div>
 
                         <div class="col l6 second-half">
-                                <img src="images/postyourworkpix.png"  alt="post a job" width="630" height="558.22">
+                                <img src="images/postyourworkpix.png"  alt="post a job" width="630" height="529.22">
                             </div>
                     </div>
 
@@ -127,7 +195,60 @@
      accordion: false
     });   
   });
-    });     
+  $('.chips').chips();
+  $('.chips-placeholder').chips({
+    placeholder: 'Tags',
+  });
+  $('.chips-initial').chips({
+    data: [{
+      tag: 'Business card',
+    }, {
+      tag: 'Logo',
+    }],
+  });
+
+}); 
+</script>
+<script>
+var input = document.getElementById( 'file-upload' );
+var infoArea = document.getElementById( 'file-upload-filename' );
+input.addEventListener( 'change', showFileName );
+function showFileName( event ) {
+  // the change event gives us the input it occurred in 
+  var input = event.srcElement;
+  // the input has an array of files in the `files` property, each one has a name that you can use. We're just using the name here.
+  var fileName = input.files[0].name;
+  // use fileName however fits your app best, i.e. add it into a div
+  infoArea.textContent = '' + fileName;
+}
+// second
+var input1 = document.getElementById( 'file-upload1' );
+var infoArea1 = document.getElementById( 'file-upload-filename1' );
+input1.addEventListener( 'change', showFileName1 );
+function showFileName1( event ) {
+  // the change event gives us the input it occurred in 
+  var input1 = event.srcElement;
+  // the input has an array of files in the `files` property, each one has a name that you can use. We're just using the name here.
+  var fileName1 = input1.files[0].name;
+  // use fileName however fits your app best, i.e. add it into a div
+  infoArea1.textContent = '' + fileName1;
+}
+// var indo = document.getElementById('file-red');
+// indo.addEventListener('change', show);
+// function show(input){
+//     if (input.target.files && input.target.files[0]) {
+//             var reader = new FileReader();
+
+//             reader.onload = function (e) {
+//                 $('#blah')
+//                     .attr('src', e.target.result)
+//                     .width(100)
+//                     .height(100);
+//             };
+
+//             reader.readAsDataURL(input.target.files[0]);
+//         }
+// }
 </script>
 </body>
 </html>

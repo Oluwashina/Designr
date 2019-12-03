@@ -960,3 +960,70 @@ nav a{
     right: 0 !important;
     height: 558.22px;
 }
+.category-select{
+    position: relative
+   }
+.category-select:after {
+    border-left: 1px solid white;
+    content:"\00a0";
+    position: absolute;
+    top: 13px;
+    right: 60px;
+    opacity: 0.5;
+    z-index: 2;
+    display:block;
+    height: 20px;
+  }
+.category-css{
+    background: #213661;
+    color: white;
+    padding-left: 15px;
+    letter-spacing: 1.2px;
+    line-height: 14px;
+    font-size: 14px;
+    appearance: none; 
+    -webkit-appearance: none;
+    background-image: url(images/chevron-down.png);
+    background-repeat: no-repeat;
+    background-position: 155px;
+}
+.category-css option{
+    background: white;
+    color: gray;
+    line-height: 14px;
+    letter-spacing: 2.4px;
+}
+.image-upload > input{
+    display: none;
+}
+.image-upload i{
+    cursor: pointer;
+    font-size: 50px;
+}
+.btn_upload {
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    background-color: #213661;
+    border: 1px solid  #213661;
+    padding: 8px 50px;
+  }
+  .btn_upload input {
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    filter: alpha(opacity=1);
+    -moz-opacity: 0;
+    opacity: 0;
+  }
+  .input-field{
+      background: #FAFAFA;
+      border-radius: 3px;
+      border-bottom: none;
+  }
+  .chips.focus{
+      border-bottom: none;
+      box-shadow: none;
+  }
